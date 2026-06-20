@@ -1,0 +1,168 @@
+/* Variáveis de Cores (Estilo Clean/Moderno) */
+:root {
+    --bg-color: #f8f9fa;
+    --card-bg: #ffffff;
+    --text-main: #212529;
+    --text-muted: #6c757d;
+    --primary-color: #0969da;
+    --primary-hover: #054da7;
+    --border-color: #e1e4e8;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    background-color: var(--bg-color);
+    color: var(--text-main);
+    line-height: 1.6;
+}
+
+.container {
+    max-width: 850px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* Cabeçalho */
+.profile-header {
+    background-color: #24292f;
+    color: #ffffff;
+    padding: 50px 0;
+    border-bottom: 1px solid var(--border-color);
+}
+
+.profile-info h1 {
+    font-size: 2.2rem;
+    margin-bottom: 5px;
+}
+
+.subtitle {
+    font-size: 1.2rem;
+    color: #8b949e;
+    margin-bottom: 15px;
+}
+
+.contact-links a {
+    color: #58a6ff;
+    text-decoration: none;
+    margin-right: 15px;
+    font-size: 0.95rem;
+}
+
+.contact-links a:hover {
+    text-decoration: underline;
+}
+
+/* Conteúdo Principal */
+.main-content {
+    margin-top: 30px;
+    margin-bottom: 60px;
+}
+
+.card {
+    background: var(--card-bg);
+    border: 1px solid var(--border-color);
+    border-radius: 8px;
+    padding: 25px;
+    margin-bottom: 25px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.02);
+}
+
+.card h2 {
+    font-size: 1.4rem;
+    color: var(--text-main);
+    margin-bottom: 15px;
+    border-bottom: 2px solid var(--bg-color);
+    padding-bottom: 5px;
+}
+
+/* Tags de Competências */
+.skills-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.tag {
+    background-color: #eff1f3;
+    color: #24292f;
+    padding: 6px 12px;
+    border-radius: 6px;
+    font-size: 0.85rem;
+    font-weight: 500;
+    border: 1px solid #d0d7de;
+}
+
+/* Grelha de Projetos */
+.projects-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+}
+
+@media (max-width: 600px) {
+    .projects-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+.project-item {
+    border: 1px solid var(--border-color);
+    border-radius: 6px;
+    padding: 20px;
+    background-color: #fafbfc;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.project-item h3 {
+    font-size: 1.1rem;
+    color: var(--primary-color);
+    margin-bottom: 10px;
+}
+
+.project-item p {
+    font-size: 0.9rem;
+    color: var(--text-muted);
+    margin-bottom: 15px;
+}
+
+.btn-project {
+    display: inline-block;
+    color: var(--primary-color);
+    text-decoration: none;
+    font-size: 0.9rem;
+    font-weight: 600;
+}
+
+.btn-project:hover {
+    color: var(--primary-hover);
+    text-decoration: underline;
+}
+
+/* Educação / Timeline */
+.timeline-item h4 {
+    font-size: 1.1rem;
+    margin-bottom: 2px;
+}
+
+.timeline-item .date {
+    font-size: 0.85rem;
+    color: var(--text-muted);
+    margin-bottom: 8px;
+}
+
+/* Rodapé */
+footer {
+    text-align: center;
+    padding: 30px 0;
+    font-size: 0.85rem;
+    color: var(--text-muted);
+    border-top: 1px solid var(--border-color);
+}
